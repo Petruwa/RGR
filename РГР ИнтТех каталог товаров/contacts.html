@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Мой Магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        <button id="theme-toggle">Сменить тему</button>
+    </header>
+
+    <main style="padding: 20px; max-width: 600px; margin: 0 auto;">
+        <h1>Наши контакты</h1>
+        <p style="margin-bottom: 20px;">Свяжитесь с нами любым удобным способом или оставьте заявку.</p>
+
+        <!-- Форма обратной связи -->
+        <form id="contact-form" style="background: var(--card-bg); padding: 20px; border-radius: 8px; display: flex; flex-direction: column; gap: 15px; border: 1px solid #ccc;">
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваше имя:</label>
+                <input type="text" id="form-name" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Ваш Email:</label>
+                <input type="email" id="form-email" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; box-sizing: border-box;">
+            </div>
+            <div>
+                <label style="display: block; margin-bottom: 5px; font-weight: bold;">Сообщение:</label>
+                <textarea id="form-message" rows="4" required style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; resize: vertical; box-sizing: border-box;"></textarea>
+            </div>
+            <button type="submit" style="font-size: 1rem; padding: 12px;">Отправить сообщение</button>
+        </form>
+
+        <!-- Инфо-блок -->
+        <div style="margin-top: 30px; background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid #ccc;">
+            <h3>Адрес и телефон</h3>
+            <p>📍 г. Улан-Удэ, ул. Трубачеева, д. 152</p>
+            <p>📞 +7 (999) 123-45-67</p>
+            <p>📧 support@mystore.ru</p>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; margin-top: 50px; border-top: 1px solid #ccc;">
+        <p>© 2026 Выполнил: Студент Ефимчук П.А. | Группа: И-141</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
